@@ -27,6 +27,6 @@ document.querySelectorAll('.tag').forEach(elemento => {
         const label = document.createElement('label')
         label.style.backgroundColor = colors.get(tagName)
         label.innerHTML = tagName
-        elemento.insertBefore(label, box.childNodes[0])
+        elemento.insertBefore(label, elemento.childNodes[0])
     }
 })
